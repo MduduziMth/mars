@@ -1,0 +1,6 @@
+framework module Pods_Weather_on_Mars_Weather_on_MarsUITests {
+  umbrella header "Pods-Weather on Mars-Weather on MarsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

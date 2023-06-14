@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48D8BD349565AA548CFB86E1 /* Pods_Weather_on_Mars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDC31E2944C2476F6035CA8 /* Pods_Weather_on_Mars.framework */; };
+		528EBDF26066532E212598E4 /* Pods_Weather_on_MarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3FFEFC029CF4237FCBF869 /* Pods_Weather_on_MarsTests.framework */; };
+		813C056E1402CA1AC1E83B38 /* Pods_Weather_on_Mars_Weather_on_MarsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D24B8D1F385D8F8DF8A7825 /* Pods_Weather_on_Mars_Weather_on_MarsUITests.framework */; };
+		CC023CED2A38DEFE00F0A7FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023CEC2A38DEFE00F0A7FF /* AppDelegate.swift */; };
+		CC023CEF2A38DEFE00F0A7FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023CEE2A38DEFE00F0A7FF /* SceneDelegate.swift */; };
+		CC023CF12A38DEFE00F0A7FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023CF02A38DEFE00F0A7FF /* ViewController.swift */; };
+		CC023CF42A38DEFE00F0A7FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC023CF22A38DEFE00F0A7FF /* Main.storyboard */; };
+		CC023CF62A38DF0000F0A7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC023CF52A38DF0000F0A7FF /* Assets.xcassets */; };
+		CC023CF92A38DF0000F0A7FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC023CF72A38DF0000F0A7FF /* LaunchScreen.storyboard */; };
+		CC023D042A38DF0000F0A7FF /* Weather_on_MarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D032A38DF0000F0A7FF /* Weather_on_MarsTests.swift */; };
+		CC023D0E2A38DF0000F0A7FF /* Weather_on_MarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D0D2A38DF0000F0A7FF /* Weather_on_MarsUITests.swift */; };
+		CC023D102A38DF0000F0A7FF /* Weather_on_MarsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D0F2A38DF0000F0A7FF /* Weather_on_MarsUITestsLaunchTests.swift */; };
+		CC023D1E2A38E07E00F0A7FF /* MarsWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D1D2A38E07E00F0A7FF /* MarsWeatherService.swift */; };
+		CC023D232A38E1B100F0A7FF /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D222A38E1B100F0A7FF /* Forecast.swift */; };
+		CC023D262A38E39300F0A7FF /* MarsWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D252A38E39300F0A7FF /* MarsWeatherRepository.swift */; };
+		CC023D292A38E45B00F0A7FF /* MarsWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D282A38E45B00F0A7FF /* MarsWeatherViewModel.swift */; };
+		CC023D2C2A38FB3C00F0A7FF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D2A2A38FB3C00F0A7FF /* CustomTableViewCell.swift */; };
+		CC023D2D2A38FB3C00F0A7FF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC023D2B2A38FB3C00F0A7FF /* CustomTableViewCell.xib */; };
+		CC023D312A399A2A00F0A7FF /* MarsDependacyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC023D302A399A2A00F0A7FF /* MarsDependacyContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC023D002A38DF0000F0A7FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC023CE12A38DEFE00F0A7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC023CE82A38DEFE00F0A7FF;
+			remoteInfo = "Weather on Mars";
+		};
+		CC023D0A2A38DF0000F0A7FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC023CE12A38DEFE00F0A7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC023CE82A38DEFE00F0A7FF;
+			remoteInfo = "Weather on Mars";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E9DE7C0D7BC73E28DFD86F /* Pods-Weather on Mars-Weather on MarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on Mars-Weather on MarsUITests.release.xcconfig"; path = "Target Support Files/Pods-Weather on Mars-Weather on MarsUITests/Pods-Weather on Mars-Weather on MarsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0D24B8D1F385D8F8DF8A7825 /* Pods_Weather_on_Mars_Weather_on_MarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_on_Mars_Weather_on_MarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1015020F78B0F7BF6F599C1C /* Pods-Weather on Mars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on Mars.debug.xcconfig"; path = "Target Support Files/Pods-Weather on Mars/Pods-Weather on Mars.debug.xcconfig"; sourceTree = "<group>"; };
+		3161915914858088DF0DAC2A /* Pods-Weather on Mars-Weather on MarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on Mars-Weather on MarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Weather on Mars-Weather on MarsUITests/Pods-Weather on Mars-Weather on MarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98E61DAD7D2C5D50B59005F6 /* Pods-Weather on MarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on MarsTests.release.xcconfig"; path = "Target Support Files/Pods-Weather on MarsTests/Pods-Weather on MarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A85FBDD6472D2511C45AF0A /* Pods-Weather on Mars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on Mars.release.xcconfig"; path = "Target Support Files/Pods-Weather on Mars/Pods-Weather on Mars.release.xcconfig"; sourceTree = "<group>"; };
+		9FDC31E2944C2476F6035CA8 /* Pods_Weather_on_Mars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_on_Mars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5129724518A0DF92EBD7CB2 /* Pods-Weather on MarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather on MarsTests.debug.xcconfig"; path = "Target Support Files/Pods-Weather on MarsTests/Pods-Weather on MarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC023CE92A38DEFE00F0A7FF /* Weather on Mars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather on Mars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC023CEC2A38DEFE00F0A7FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC023CEE2A38DEFE00F0A7FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC023CF02A38DEFE00F0A7FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC023CF32A38DEFE00F0A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC023CF52A38DF0000F0A7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC023CF82A38DF0000F0A7FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC023CFA2A38DF0000F0A7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC023CFF2A38DF0000F0A7FF /* Weather on MarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather on MarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC023D032A38DF0000F0A7FF /* Weather_on_MarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_on_MarsTests.swift; sourceTree = "<group>"; };
+		CC023D092A38DF0000F0A7FF /* Weather on MarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather on MarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC023D0D2A38DF0000F0A7FF /* Weather_on_MarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_on_MarsUITests.swift; sourceTree = "<group>"; };
+		CC023D0F2A38DF0000F0A7FF /* Weather_on_MarsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_on_MarsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC023D1D2A38E07E00F0A7FF /* MarsWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherService.swift; sourceTree = "<group>"; };
+		CC023D222A38E1B100F0A7FF /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = "/Users/mduduzi/Documents/Weather on Mars/Weather on Mars/Models/Forecast.swift"; sourceTree = "<absolute>"; };
+		CC023D252A38E39300F0A7FF /* MarsWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherRepository.swift; sourceTree = "<group>"; };
+		CC023D282A38E45B00F0A7FF /* MarsWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherViewModel.swift; sourceTree = "<group>"; };
+		CC023D2A2A38FB3C00F0A7FF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		CC023D2B2A38FB3C00F0A7FF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		CC023D2F2A3999C800F0A7FF /* Swinject-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Swinject-master"; path = "../../Downloads/Swinject-master"; sourceTree = "<group>"; };
+		CC023D302A399A2A00F0A7FF /* MarsDependacyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDependacyContainer.swift; sourceTree = "<group>"; };
+		CC3FFEFC029CF4237FCBF869 /* Pods_Weather_on_MarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_on_MarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC023CE62A38DEFE00F0A7FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D8BD349565AA548CFB86E1 /* Pods_Weather_on_Mars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023CFC2A38DF0000F0A7FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528EBDF26066532E212598E4 /* Pods_Weather_on_MarsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023D062A38DF0000F0A7FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813C056E1402CA1AC1E83B38 /* Pods_Weather_on_Mars_Weather_on_MarsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB4BB73DF4B85DFF21A17C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FDC31E2944C2476F6035CA8 /* Pods_Weather_on_Mars.framework */,
+				0D24B8D1F385D8F8DF8A7825 /* Pods_Weather_on_Mars_Weather_on_MarsUITests.framework */,
+				CC3FFEFC029CF4237FCBF869 /* Pods_Weather_on_MarsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC023CE02A38DEFE00F0A7FF = {
+			isa = PBXGroup;
+			children = (
+				CC023D2E2A3999C800F0A7FF /* Packages */,
+				CC023CEB2A38DEFE00F0A7FF /* Weather on Mars */,
+				CC023D022A38DF0000F0A7FF /* Weather on MarsTests */,
+				CC023D0C2A38DF0000F0A7FF /* Weather on MarsUITests */,
+				CC023CEA2A38DEFE00F0A7FF /* Products */,
+				F5F9563328A9701BCE44DCFF /* Pods */,
+				0DB4BB73DF4B85DFF21A17C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC023CEA2A38DEFE00F0A7FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC023CE92A38DEFE00F0A7FF /* Weather on Mars.app */,
+				CC023CFF2A38DF0000F0A7FF /* Weather on MarsTests.xctest */,
+				CC023D092A38DF0000F0A7FF /* Weather on MarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC023CEB2A38DEFE00F0A7FF /* Weather on Mars */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D272A38E42200F0A7FF /* ViewModels */,
+				CC023D242A38E34E00F0A7FF /* MarsRepository */,
+				CC023D212A38E18800F0A7FF /* Models */,
+				CC023D1C2A38E00100F0A7FF /* MarsService */,
+				CC023CEC2A38DEFE00F0A7FF /* AppDelegate.swift */,
+				CC023CEE2A38DEFE00F0A7FF /* SceneDelegate.swift */,
+				CC023CF02A38DEFE00F0A7FF /* ViewController.swift */,
+				CC023CF22A38DEFE00F0A7FF /* Main.storyboard */,
+				CC023CF52A38DF0000F0A7FF /* Assets.xcassets */,
+				CC023CF72A38DF0000F0A7FF /* LaunchScreen.storyboard */,
+				CC023CFA2A38DF0000F0A7FF /* Info.plist */,
+				CC023D2A2A38FB3C00F0A7FF /* CustomTableViewCell.swift */,
+				CC023D2B2A38FB3C00F0A7FF /* CustomTableViewCell.xib */,
+			);
+			path = "Weather on Mars";
+			sourceTree = "<group>";
+		};
+		CC023D022A38DF0000F0A7FF /* Weather on MarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D032A38DF0000F0A7FF /* Weather_on_MarsTests.swift */,
+			);
+			path = "Weather on MarsTests";
+			sourceTree = "<group>";
+		};
+		CC023D0C2A38DF0000F0A7FF /* Weather on MarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D0D2A38DF0000F0A7FF /* Weather_on_MarsUITests.swift */,
+				CC023D0F2A38DF0000F0A7FF /* Weather_on_MarsUITestsLaunchTests.swift */,
+			);
+			path = "Weather on MarsUITests";
+			sourceTree = "<group>";
+		};
+		CC023D1C2A38E00100F0A7FF /* MarsService */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D1D2A38E07E00F0A7FF /* MarsWeatherService.swift */,
+			);
+			path = MarsService;
+			sourceTree = "<group>";
+		};
+		CC023D212A38E18800F0A7FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D222A38E1B100F0A7FF /* Forecast.swift */,
+				CC023D302A399A2A00F0A7FF /* MarsDependacyContainer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC023D242A38E34E00F0A7FF /* MarsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D252A38E39300F0A7FF /* MarsWeatherRepository.swift */,
+			);
+			path = MarsRepository;
+			sourceTree = "<group>";
+		};
+		CC023D272A38E42200F0A7FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D282A38E45B00F0A7FF /* MarsWeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC023D2E2A3999C800F0A7FF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CC023D2F2A3999C800F0A7FF /* Swinject-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		F5F9563328A9701BCE44DCFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1015020F78B0F7BF6F599C1C /* Pods-Weather on Mars.debug.xcconfig */,
+				9A85FBDD6472D2511C45AF0A /* Pods-Weather on Mars.release.xcconfig */,
+				3161915914858088DF0DAC2A /* Pods-Weather on Mars-Weather on MarsUITests.debug.xcconfig */,
+				00E9DE7C0D7BC73E28DFD86F /* Pods-Weather on Mars-Weather on MarsUITests.release.xcconfig */,
+				B5129724518A0DF92EBD7CB2 /* Pods-Weather on MarsTests.debug.xcconfig */,
+				98E61DAD7D2C5D50B59005F6 /* Pods-Weather on MarsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC023CE82A38DEFE00F0A7FF /* Weather on Mars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC023D132A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on Mars" */;
+			buildPhases = (
+				A0A24B5AB4065D75E690C6B0 /* [CP] Check Pods Manifest.lock */,
+				CC023CE52A38DEFE00F0A7FF /* Sources */,
+				CC023CE62A38DEFE00F0A7FF /* Frameworks */,
+				CC023CE72A38DEFE00F0A7FF /* Resources */,
+				085D77158BCE1241098E2D7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weather on Mars";
+			productName = "Weather on Mars";
+			productReference = CC023CE92A38DEFE00F0A7FF /* Weather on Mars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC023CFE2A38DF0000F0A7FF /* Weather on MarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC023D162A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on MarsTests" */;
+			buildPhases = (
+				86A5B0773F1B59BB36F0E1A1 /* [CP] Check Pods Manifest.lock */,
+				CC023CFB2A38DF0000F0A7FF /* Sources */,
+				CC023CFC2A38DF0000F0A7FF /* Frameworks */,
+				CC023CFD2A38DF0000F0A7FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC023D012A38DF0000F0A7FF /* PBXTargetDependency */,
+			);
+			name = "Weather on MarsTests";
+			productName = "Weather on MarsTests";
+			productReference = CC023CFF2A38DF0000F0A7FF /* Weather on MarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC023D082A38DF0000F0A7FF /* Weather on MarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC023D192A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on MarsUITests" */;
+			buildPhases = (
+				77215AE7478175C92BD34D14 /* [CP] Check Pods Manifest.lock */,
+				CC023D052A38DF0000F0A7FF /* Sources */,
+				CC023D062A38DF0000F0A7FF /* Frameworks */,
+				CC023D072A38DF0000F0A7FF /* Resources */,
+				16F14F1E9F78E12882BB56A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC023D0B2A38DF0000F0A7FF /* PBXTargetDependency */,
+			);
+			name = "Weather on MarsUITests";
+			productName = "Weather on MarsUITests";
+			productReference = CC023D092A38DF0000F0A7FF /* Weather on MarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC023CE12A38DEFE00F0A7FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CC023CE82A38DEFE00F0A7FF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CC023CFE2A38DF0000F0A7FF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CC023CE82A38DEFE00F0A7FF;
+					};
+					CC023D082A38DF0000F0A7FF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CC023CE82A38DEFE00F0A7FF;
+					};
+				};
+			};
+			buildConfigurationList = CC023CE42A38DEFE00F0A7FF /* Build configuration list for PBXProject "Weather on Mars" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC023CE02A38DEFE00F0A7FF;
+			productRefGroup = CC023CEA2A38DEFE00F0A7FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC023CE82A38DEFE00F0A7FF /* Weather on Mars */,
+				CC023CFE2A38DF0000F0A7FF /* Weather on MarsTests */,
+				CC023D082A38DF0000F0A7FF /* Weather on MarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC023CE72A38DEFE00F0A7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC023CF92A38DF0000F0A7FF /* LaunchScreen.storyboard in Resources */,
+				CC023D2D2A38FB3C00F0A7FF /* CustomTableViewCell.xib in Resources */,
+				CC023CF62A38DF0000F0A7FF /* Assets.xcassets in Resources */,
+				CC023CF42A38DEFE00F0A7FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023CFD2A38DF0000F0A7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023D072A38DF0000F0A7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085D77158BCE1241098E2D7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars/Pods-Weather on Mars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars/Pods-Weather on Mars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars/Pods-Weather on Mars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16F14F1E9F78E12882BB56A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars-Weather on MarsUITests/Pods-Weather on Mars-Weather on MarsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars-Weather on MarsUITests/Pods-Weather on Mars-Weather on MarsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weather on Mars-Weather on MarsUITests/Pods-Weather on Mars-Weather on MarsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77215AE7478175C92BD34D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather on Mars-Weather on MarsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A5B0773F1B59BB36F0E1A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather on MarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A24B5AB4065D75E690C6B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weather on Mars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC023CE52A38DEFE00F0A7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC023CF12A38DEFE00F0A7FF /* ViewController.swift in Sources */,
+				CC023D2C2A38FB3C00F0A7FF /* CustomTableViewCell.swift in Sources */,
+				CC023D262A38E39300F0A7FF /* MarsWeatherRepository.swift in Sources */,
+				CC023CED2A38DEFE00F0A7FF /* AppDelegate.swift in Sources */,
+				CC023D312A399A2A00F0A7FF /* MarsDependacyContainer.swift in Sources */,
+				CC023CEF2A38DEFE00F0A7FF /* SceneDelegate.swift in Sources */,
+				CC023D1E2A38E07E00F0A7FF /* MarsWeatherService.swift in Sources */,
+				CC023D232A38E1B100F0A7FF /* Forecast.swift in Sources */,
+				CC023D292A38E45B00F0A7FF /* MarsWeatherViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023CFB2A38DF0000F0A7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC023D042A38DF0000F0A7FF /* Weather_on_MarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC023D052A38DF0000F0A7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC023D0E2A38DF0000F0A7FF /* Weather_on_MarsUITests.swift in Sources */,
+				CC023D102A38DF0000F0A7FF /* Weather_on_MarsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC023D012A38DF0000F0A7FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC023CE82A38DEFE00F0A7FF /* Weather on Mars */;
+			targetProxy = CC023D002A38DF0000F0A7FF /* PBXContainerItemProxy */;
+		};
+		CC023D0B2A38DF0000F0A7FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC023CE82A38DEFE00F0A7FF /* Weather on Mars */;
+			targetProxy = CC023D0A2A38DF0000F0A7FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC023CF22A38DEFE00F0A7FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC023CF32A38DEFE00F0A7FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC023CF72A38DF0000F0A7FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC023CF82A38DF0000F0A7FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC023D112A38DF0000F0A7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC023D122A38DF0000F0A7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC023D142A38DF0000F0A7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1015020F78B0F7BF6F599C1C /* Pods-Weather on Mars.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather on Mars/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-Mars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC023D152A38DF0000F0A7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A85FBDD6472D2511C45AF0A /* Pods-Weather on Mars.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather on Mars/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-Mars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC023D172A38DF0000F0A7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5129724518A0DF92EBD7CB2 /* Pods-Weather on MarsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-MarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weather on Mars.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weather on Mars";
+			};
+			name = Debug;
+		};
+		CC023D182A38DF0000F0A7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E61DAD7D2C5D50B59005F6 /* Pods-Weather on MarsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-MarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weather on Mars.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weather on Mars";
+			};
+			name = Release;
+		};
+		CC023D1A2A38DF0000F0A7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3161915914858088DF0DAC2A /* Pods-Weather on Mars-Weather on MarsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-MarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weather on Mars";
+			};
+			name = Debug;
+		};
+		CC023D1B2A38DF0000F0A7FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00E9DE7C0D7BC73E28DFD86F /* Pods-Weather on Mars-Weather on MarsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VHTU7RXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tsotsi.Weather-on-MarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weather on Mars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC023CE42A38DEFE00F0A7FF /* Build configuration list for PBXProject "Weather on Mars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC023D112A38DF0000F0A7FF /* Debug */,
+				CC023D122A38DF0000F0A7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC023D132A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on Mars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC023D142A38DF0000F0A7FF /* Debug */,
+				CC023D152A38DF0000F0A7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC023D162A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on MarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC023D172A38DF0000F0A7FF /* Debug */,
+				CC023D182A38DF0000F0A7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC023D192A38DF0000F0A7FF /* Build configuration list for PBXNativeTarget "Weather on MarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC023D1A2A38DF0000F0A7FF /* Debug */,
+				CC023D1B2A38DF0000F0A7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC023CE12A38DEFE00F0A7FF /* Project object */;
+}
